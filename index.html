@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Babyname Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Babyname Generator</h1>
+  <div class="container">
+    <label for="jumlah">Jumlah Kata</label>
+    <select id="jumlah">
+      <option value="2">2 Kata</option>
+      <option value="3">3 Kata</option>
+      <option value="4">4 Kata</option>
+    </select>
+
+    <label for="negara">Asal Nama (Negara)</label>
+    <select id="negara">
+      <option value="Indonesia">Indonesia</option>
+      <option value="Arab">Arab</option>
+      <option value="Jepang">Jepang</option>
+      <option value="Perancis">Perancis</option>
+      <option value="Inggris">Inggris</option>
+      <option value="Campuran">Campuran</option>
+    </select>
+
+    <label for="gender">Jenis Kelamin</label>
+    <select id="gender">
+      <option value="Perempuan">Perempuan</option>
+      <option value="Laki-laki">Laki-laki</option>
+    </select>
+
+    <button onclick="generateNama()">🎉 Buat Nama Bayi</button>
+    <div class="result" id="result">...</div>
+  </div>
+</body>
+<script src="script.js"></script>  
+<footer style="text-align: center; margin-top: 3rem; padding: 1rem 0; font-size: 0.9rem; color: #6c757d;">
+  Tools oleh <a href="https://www.kreasai.com" target="_blank" style="color: #000080; font-weight: 600; text-decoration: none;">KREASAI.COM</a>
+</footer>
+</html>
